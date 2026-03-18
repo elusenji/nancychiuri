@@ -1,0 +1,99 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+const programs = [
+  {
+    title: 'Postpartum Recovery Program',
+    description: 'A gentle, progressive program designed to help new mothers rebuild core strength, restore energy, and regain confidence after pregnancy.',
+    features: ['Pelvic floor restoration', 'Core rebuilding exercises', 'Energy management strategies', 'Mental wellness check-ins'],
+  },
+  {
+    title: '21-Day Fitness Challenge',
+    description: 'A structured 21-day program to kickstart your fitness journey with daily workouts, nutrition tips, and community accountability.',
+    features: ['Daily guided workouts', 'Nutrition guidance', 'Community support group', 'Progress tracking'],
+  },
+  {
+    title: 'Beginner Home Workouts',
+    description: 'No gym, no problem. Simple, effective workouts you can do at home with minimal equipment — designed for busy mothers.',
+    features: ['No equipment needed', '15-30 minute sessions', 'Follow-along videos', 'Flexible scheduling'],
+  },
+  {
+    title: 'Weight Transformation Program',
+    description: 'A comprehensive program combining fitness, nutrition, and mindset work for sustainable weight transformation — not quick fixes.',
+    features: ['Customized workout plans', 'Sustainable nutrition approach', 'Mindset coaching', 'Weekly check-ins'],
+  },
+];
+---
+
+<MainLayout title="Programs">
+
+  <!-- Header -->
+  <section class="pt-32 pb-16 bg-gradient-to-b from-sage-50 to-white dark:from-stone-950 dark:to-stone-900">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <p class="text-sage-600 dark:text-sage-400 font-medium text-sm tracking-widest uppercase mb-4">Programs</p>
+      <h1 class="font-heading text-5xl md:text-6xl font-bold text-stone-900 dark:text-white leading-tight">
+        Find Your Program
+      </h1>
+      <p class="mt-6 text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+        Every program is built for real life — designed to meet you where you are and take you where you want to go.
+      </p>
+    </div>
+  </section>
+
+  <!-- Programs Grid -->
+  <section class="py-14 bg-white dark:bg-stone-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {programs.map((program) => (
+          <div class="p-10 rounded-3xl bg-sage-50 dark:bg-stone-800 border border-sage-100 dark:border-stone-700">
+            <div class="aspect-video rounded-2xl bg-gradient-to-br from-stone-100 to-stone-200 dark:from-stone-700 dark:to-stone-600 flex items-center justify-center text-stone-400 dark:text-stone-500 mb-8">
+              <div class="text-center">
+                <svg class="w-10 h-10 mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <p class="text-sm">Workout demonstrations</p>
+              </div>
+            </div>
+
+            <h3 class="font-heading text-2xl font-bold text-stone-900 dark:text-white">{program.title}</h3>
+            <p class="mt-3 text-stone-500 dark:text-stone-400 leading-relaxed">{program.description}</p>
+
+            <ul class="mt-6 space-y-2">
+              {program.features.map((feature) => (
+                <li class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-sage-600 dark:text-sage-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-stone-600 dark:text-stone-300">{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <a href="/contact" class="inline-block mt-8 px-6 py-3 bg-sage-600 text-white text-sm font-medium rounded-full hover:bg-sage-700 transition-colors">
+              Join This Program
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Guide CTA -->
+  <section class="py-14 bg-stone-100 dark:bg-stone-950">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="font-heading text-4xl md:text-5xl font-bold text-stone-900 dark:text-white leading-tight">
+        Not sure where to start?
+      </h2>
+      <p class="mt-6 text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+        Download a free guide to help you choose the right program for your fitness level and goals.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block mt-10 px-10 py-4 bg-sage-600 text-white font-semibold rounded-full hover:bg-sage-700 transition-colors"
+      >
+        Download Free Guide
+      </a>
+    </div>
+  </section>
+
+</MainLayout>

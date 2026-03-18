@@ -1,0 +1,207 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Home">
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center bg-gradient-to-br from-sage-50 via-stone-50 to-warm-50 dark:from-stone-950 dark:via-stone-900 dark:to-stone-950 pt-20">
+    <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-sage-600 dark:text-sage-400 font-medium text-sm tracking-widest uppercase mb-4">Mama Fitness Kenya</p>
+        <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-stone-900 dark:text-white leading-[1.08] tracking-tight">
+          Strong Mothers.<br />
+          <span class="text-sage-600 dark:text-sage-400">Healthy Families.</span><br />
+          Empowered Living.
+        </h1>
+        <p class="mt-6 text-lg text-stone-500 dark:text-stone-400 max-w-lg leading-relaxed">
+          Helping busy mothers rebuild strength, confidence, and wellness — without unrealistic pressure.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a
+            href="/programs"
+            class="px-8 py-4 bg-sage-600 text-white font-medium rounded-full hover:bg-sage-700 transition-colors"
+          >
+            Start Your Fitness Journey
+          </a>
+          <a
+            href="/services"
+            class="px-8 py-4 border-2 border-stone-300 dark:border-stone-600 text-stone-700 dark:text-stone-300 font-medium rounded-full hover:border-sage-600 hover:text-sage-700 dark:hover:border-sage-400 dark:hover:text-sage-400 transition-colors"
+          >
+            Work With Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Image Placeholder -->
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-3xl bg-gradient-to-br from-sage-200 to-earth-200 dark:from-sage-800 dark:to-earth-800 overflow-hidden">
+          <div class="w-full h-full flex items-center justify-center text-stone-400 dark:text-stone-500">
+            <div class="text-center">
+              <svg class="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <p class="text-sm">Nancy leading a workout outdoors</p>
+            </div>
+          </div>
+        </div>
+        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-warm-200 dark:bg-warm-900 rounded-3xl -z-10"></div>
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-sage-200 dark:bg-sage-900 rounded-full -z-10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Snapshot -->
+  <section class="py-14 bg-white dark:bg-stone-900">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="aspect-square rounded-3xl bg-gradient-to-br from-warm-100 to-earth-100 dark:from-warm-900 dark:to-earth-900 flex items-center justify-center text-stone-400 dark:text-stone-500">
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto mb-3 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <p class="text-sm">Nancy with her children</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-sage-600 dark:text-sage-400 font-medium text-sm tracking-widest uppercase mb-4">My Story</p>
+        <h2 class="font-heading text-4xl md:text-5xl font-bold text-stone-900 dark:text-white leading-tight">
+          Hi, I'm Nancy Chiuri
+        </h2>
+        <p class="mt-6 text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+          A mother of six and wellness advocate helping mothers prioritize their health while balancing family and personal goals.
+        </p>
+        <p class="mt-4 text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+          My journey through six pregnancies taught me that wellness isn't about perfection — it's about showing up for yourself, one day at a time.
+        </p>
+        <a
+          href="/about"
+          class="inline-flex items-center gap-2 mt-8 text-sage-600 dark:text-sage-400 font-medium hover:text-sage-800 dark:hover:text-sage-300 transition-colors"
+        >
+          Read My Full Story
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transformation Journey -->
+  <section class="py-14 bg-stone-100 dark:bg-stone-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <p class="text-sage-600 dark:text-sage-400 font-medium text-sm tracking-widest uppercase mb-4">Transformation</p>
+        <h2 class="font-heading text-4xl md:text-5xl font-bold text-stone-900 dark:text-white leading-tight">
+          From Pregnancy to Power
+        </h2>
+        <p class="mt-6 text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+          Across six pregnancies, I gained and lost weight multiple times — but through consistency, faith, and practical fitness, I transformed my body and mind.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="aspect-[3/4] rounded-2xl bg-gradient-to-br from-warm-100 to-warm-200 dark:from-warm-900 dark:to-warm-800 flex items-center justify-center text-stone-400 dark:text-stone-500">
+          <div class="text-center">
+            <svg class="w-10 h-10 mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <p class="text-sm">Before</p>
+          </div>
+        </div>
+        <div class="aspect-[3/4] rounded-2xl bg-gradient-to-br from-sage-100 to-sage-200 dark:from-sage-900 dark:to-sage-800 flex items-center justify-center text-stone-400 dark:text-stone-500">
+          <div class="text-center">
+            <svg class="w-10 h-10 mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <p class="text-sm">During</p>
+          </div>
+        </div>
+        <div class="aspect-[3/4] rounded-2xl bg-gradient-to-br from-earth-100 to-earth-200 dark:from-earth-900 dark:to-earth-800 flex items-center justify-center text-stone-400 dark:text-stone-500">
+          <div class="text-center">
+            <svg class="w-10 h-10 mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <p class="text-sm">After</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services -->
+  <section class="py-14 bg-white dark:bg-stone-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <p class="text-sage-600 dark:text-sage-400 font-medium text-sm tracking-widest uppercase mb-4">What I Offer</p>
+        <h2 class="font-heading text-4xl md:text-5xl font-bold text-stone-900 dark:text-white leading-tight">
+          Wellness, Your Way
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="group p-8 rounded-2xl bg-sage-50 dark:bg-sage-900/30 hover:bg-sage-100 dark:hover:bg-sage-900/50 transition-colors text-center">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-sage-200 dark:bg-sage-800 flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage-700 dark:text-sage-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-stone-900 dark:text-white mb-3">Postpartum & Maternal Fitness</h3>
+          <p class="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">Gentle, effective programs designed for mothers at every stage of recovery.</p>
+        </div>
+
+        <div class="group p-8 rounded-2xl bg-warm-50 dark:bg-warm-900/30 hover:bg-warm-100 dark:hover:bg-warm-900/50 transition-colors text-center">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-warm-200 dark:bg-warm-800 flex items-center justify-center">
+            <svg class="w-8 h-8 text-warm-700 dark:text-warm-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-stone-900 dark:text-white mb-3">Family-Centered Wellness</h3>
+          <p class="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">Programs that fit around your family life, not the other way around.</p>
+        </div>
+
+        <div class="group p-8 rounded-2xl bg-earth-50 dark:bg-earth-900/30 hover:bg-earth-100 dark:hover:bg-earth-900/50 transition-colors text-center">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-earth-200 dark:bg-earth-800 flex items-center justify-center">
+            <svg class="w-8 h-8 text-earth-700 dark:text-earth-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-stone-900 dark:text-white mb-3">Mind, Body & Spirit</h3>
+          <p class="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">Holistic alignment that nurtures your whole self — faith, fitness, and mindset.</p>
+        </div>
+
+        <div class="group p-8 rounded-2xl bg-sage-50 dark:bg-sage-900/30 hover:bg-sage-100 dark:hover:bg-sage-900/50 transition-colors text-center">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-sage-200 dark:bg-sage-800 flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage-700 dark:text-sage-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-stone-900 dark:text-white mb-3">Wellness Trips</h3>
+          <p class="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">Hiking, walking groups, and nature retreats that reconnect you with yourself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-sage-700 dark:bg-sage-900 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-sage-600 dark:bg-sage-800 rounded-full -translate-y-1/2 translate-x-1/2 opacity-50"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-sage-800 dark:bg-sage-950 rounded-full translate-y-1/2 -translate-x-1/2 opacity-50"></div>
+
+    <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+      <h2 class="font-heading text-4xl md:text-5xl font-bold text-white leading-tight">
+        You don't have to choose between motherhood and your wellness.
+      </h2>
+      <p class="mt-6 text-lg text-sage-200 dark:text-sage-300 leading-relaxed">
+        Join a community of mothers who are showing up for themselves — one step, one workout, one day at a time.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block mt-10 px-10 py-4 bg-white text-sage-700 font-semibold rounded-full hover:bg-stone-100 transition-colors"
+      >
+        Join the Movement
+      </a>
+    </div>
+  </section>
+
+</MainLayout>
