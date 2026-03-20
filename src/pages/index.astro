@@ -1,5 +1,11 @@
 ---
+import { Image } from 'astro:assets';
 import MainLayout from '../layouts/MainLayout.astro';
+import nancy1 from '../assets/images/nancy-1.jpeg';
+import nancyHome2 from '../assets/images/nancy-home-2.jpg';
+import nancyBefore from '../assets/images/nancy-home-before.jpg';
+import nancyDuring from '../assets/images/nancy-home-during.jpg';
+import nancyAfter from '../assets/images/nancy-home-after.jpg';
 ---
 
 <MainLayout title="Home">
@@ -36,7 +42,7 @@ import MainLayout from '../layouts/MainLayout.astro';
       <!-- Hero Image Placeholder -->
       <div class="relative">
         <div class="aspect-[4/5] rounded-3xl overflow-hidden">
-          <img src="/images/nancy-1.jpeg" alt="Nancy with her children" class="w-full h-full object-cover" />
+          <Image src={nancy1} alt="Nancy with her children" class="w-full h-full object-cover" widths={[400, 800, 1200]} sizes="(max-width: 1024px) 100vw, 50vw" format="webp" />
         </div>
         <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-warm-200 dark:bg-warm-900 rounded-3xl -z-10"></div>
         <div class="absolute -top-6 -right-6 w-24 h-24 bg-sage-200 dark:bg-sage-900 rounded-full -z-10"></div>
@@ -48,7 +54,7 @@ import MainLayout from '../layouts/MainLayout.astro';
   <section class="py-14 bg-white dark:bg-stone-900">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
       <div class="aspect-square rounded-3xl overflow-hidden">
-        <img src="/images/nancy-home-2.jpg" alt="Nancy Chiuri seated portrait" class="w-full h-full object-cover" />
+        <Image src={nancyHome2} alt="Nancy Chiuri seated portrait" class="w-full h-full object-cover" widths={[400, 800, 1200]} sizes="(max-width: 1024px) 100vw, 50vw" format="webp" />
       </div>
 
       <div>
@@ -90,13 +96,13 @@ import MainLayout from '../layouts/MainLayout.astro';
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="aspect-[3/4] rounded-2xl overflow-hidden">
-          <img src="/images/nancy-home-before.jpg" alt="Nancy before transformation" class="w-full h-full object-cover" />
+          <Image src={nancyBefore} alt="Nancy before transformation" class="w-full h-full object-cover" widths={[400, 800]} sizes="(max-width: 768px) 100vw, 33vw" format="webp" />
         </div>
         <div class="aspect-[3/4] rounded-2xl overflow-hidden">
-          <img src="/images/nancy-home-during.jpg" alt="Nancy during transformation" class="w-full h-full object-cover" />
+          <Image src={nancyDuring} alt="Nancy during transformation" class="w-full h-full object-cover" widths={[400, 800]} sizes="(max-width: 768px) 100vw, 33vw" format="webp" />
         </div>
         <div class="aspect-[3/4] rounded-2xl overflow-hidden">
-          <img src="/images/nancy-home-after.jpg" alt="Nancy after transformation" class="w-full h-full object-cover" />
+          <Image src={nancyAfter} alt="Nancy after transformation" class="w-full h-full object-cover" widths={[400, 800]} sizes="(max-width: 768px) 100vw, 33vw" format="webp" />
         </div>
       </div>
     </div>
